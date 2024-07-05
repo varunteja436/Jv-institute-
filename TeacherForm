@@ -1,0 +1,38 @@
+import React, { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
+import Footer from './Footer';
+
+const TeacherForm = ({
+  addOrEditTeacher,
+  currentId,
+  teacherObjects = {},
+  onEditTeacher,
+  onDeleteTeacher
+}) => {
+  const initializedFieldValues = {
+    name: '',
+    department: '',
+    schedule: '',
+    marks: '',
+    assignmentDetails: '',
+    document: ''
+  };
+
+  const [values, setValues] = useState(initializedFieldValues);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (currentId === "" || !teacherObjects[currentId]) {
+      setValues(initializedFieldValues);
+    } else {
+      setValues(teacherObjects[currentId]);
+    }
+  }, [currentId, teacherObjects]);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setValues({
+      ...values,
+      [name]: value
+    });
