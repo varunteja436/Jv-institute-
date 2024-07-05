@@ -1,0 +1,27 @@
+import React from "react";
+
+const generateRows = (teacherObjects, onEdit, onDelete) => {
+  const rows = [];
+  for (let id in teacherObjects) {
+    rows.push (
+      <tr key={id}>
+        <td>{teacherObjects[id].name}</td>
+        <td>{teacherObjects[id].department}</td>
+        <td>{teacherObjects[id].schedule}</td>
+        
+        <td>{teacherObjects[id].assignmentDetails}</td>
+        <td>
+          <button onClick={() => onEdit(id)}>Edit</button>
+          <button onClick={() => onDelete(id)}>Delete</button>
+        </td>
+      </tr>
+    );
+  }
+  return rows;
+};
+
+
+  );
+};
+
+export default TeacherList;
