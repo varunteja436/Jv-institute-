@@ -19,3 +19,29 @@ const generateRows = (updationObjects, onEdit, onDelete) => {
   }
   return rows;
 };
+
+const UpdationList = ({ updationObjects, onEdit, onDelete }) => {
+  return (
+    <div>
+      <h1>Updation List</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Telephone</th>
+            <th>Department</th>
+            <th>Fee</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {generateRows(updationObjects, onEdit, onDelete)}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default UpdationList;
+
