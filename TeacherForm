@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
+import TeacherList from ./ TeacherList';
 import Footer from './Footer';
 
 const TeacherForm = ({
