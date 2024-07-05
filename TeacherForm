@@ -36,3 +36,35 @@ const TeacherForm = ({
       ...values,
       [name]: value
     });
+    const handleFileChange = (event) => {
+    const { name, files } = event.target;
+    setValues({
+      ...values,
+      [name]: files[0] 
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addOrEditTeacher(values);
+    setValues(initializedFieldValues);
+    navigate('/TeacherForm');
+  };
+
+  return (
+    <div className="teacher-form-container">
+      <Navbar />
+      <h1>{currentId ? 'Edit Teacher Details' : 'Add Teacher Details'}</h1>
+      <form onSubmit={handleSubmit}>
+        <div className="form-field">
+          <label htmlFor="name">Teacher Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={values.name}
+            onChange={handleChange}
+            placeholder="Enter teacher name"
+            required
+          />
+        </div>
