@@ -18,7 +18,26 @@ const generateRows = (studentObjects, onEdit, onDelete) => {
   }
   return rows;
 };
-
-
+const StudentList = ({ studentObjects, onEdit, onDelete }) => {
+  return (
+    <div>
+      <h2>Student List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th> {}
+            <th>Name</th>
+            <th>Age</th>
+            <th>Department</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {generateRows(studentObjects, onEdit, onDelete)}
+        </tbody>
+      </table>
+    </div>
+  );
+};
 
 export default StudentList;
