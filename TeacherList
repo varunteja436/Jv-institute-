@@ -19,7 +19,26 @@ const generateRows = (teacherObjects, onEdit, onDelete) => {
   }
   return rows;
 };
-
+const TeacherList = ({ teacherObjects, onEdit, onDelete }) => {
+  return (
+    <div>
+      <h1>Teacher List</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Schedule</th>
+            
+            <th>Assignment Details</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {generateRows(teacherObjects, onEdit, onDelete)}
+        </tbody>
+      </table>
+    </div>
 
   );
 };
