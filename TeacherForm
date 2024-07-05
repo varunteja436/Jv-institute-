@@ -67,4 +67,75 @@ const TeacherForm = ({
             placeholder="Enter teacher name"
             required
           />
+        </<div className="form-field">
+          <label htmlFor="department">Department:</label>
+          <input
+            type="text"
+            id="department"
+            name="department"
+            value={values.department}
+            onChange={handleChange}
+            placeholder="Enter department"
+            required
+          />
         </div>
+        <div className="form-field">
+          <label htmlFor="schedule">Schedule:</label>
+          <input
+            type="text"
+            id="schedule"
+            name="schedule"
+            value={values.schedule}
+            onChange={handleChange}
+            placeholder="Enter schedule"
+            required
+          />
+        </div>
+        <div className="form-field">
+          <label htmlFor="marks">Marks:</label>
+          <input
+            type="text"
+            id="marks"
+            name="marks"
+            value={values.marks}
+            onChange={handleChange}
+            placeholder="Enter marks"
+            required
+          />
+        </div>
+        <div className="form-field">
+          <label htmlFor="assignmentDetails">Assignment Details:</label>
+          <input
+            type="text"
+            id="assignmentDetails"
+            name="assignmentDetails"
+            value={values.assignmentDetails}
+            onChange={handleChange}
+            placeholder="Enter assignment details"
+            required
+          />
+        </div>
+        <div className="form-field">
+          <label htmlFor="document">Instruction Document:</label>
+          <input
+            type="file"
+            id="document"
+            name="document"
+            onChange={handleFileChange}
+            required
+          />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <h2>Teacher List</h2>
+      <TeacherList
+        teacherObjects={teacherObjects}
+        onEdit={onEditTeacher}
+        onDelete={onDeleteTeacher}
+      />
+      <Footer />
+    </div>
+  );
+};
+
+export default TeacherForm;
