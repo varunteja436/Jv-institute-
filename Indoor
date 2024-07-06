@@ -17,7 +17,7 @@ function Indoor() {
           <div className="indoor-chess">
             <img src={chess} alt="Chess" className="indoor-logo" />
             <p>
-              Enjoy a variety of indoor games at GNIT.<br />
+              Enjoy a variety of indoor games at JV.<br />
               From chess to carroms, we offer a range of activities<br />
               to keep you engaged and entertained.<br />
               Come and be a part of our vibrant community!
@@ -27,7 +27,7 @@ function Indoor() {
           <div className="indoor-tt">
             <img src={tt} alt="Table Tennis" className="indoor-logo" />
             <p>
-              Sharpen your skills in table tennis at GNIT.<br />
+              Sharpen your skills in table tennis at JV.<br />
               Whether you are a beginner or a pro,<br />
               our facilities are here to help you excel.<br />
               Join us for some friendly competition and fun!
