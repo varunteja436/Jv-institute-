@@ -38,7 +38,7 @@ function Indoor() {
           <div className="indoor-carrom">
             <img src={carrom} alt="Carrom" className="indoor-logo" />
             <p>
-              Play carroms and unwind at GNIT.<br />
+              Play carroms and unwind at JV.<br />
               Our indoor game zones are perfect for relaxation<br />
               and friendly matches with your peers.<br />
               Experience the joy of games in a great atmosphere!
