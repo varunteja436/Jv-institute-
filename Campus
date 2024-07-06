@@ -1,0 +1,29 @@
+import React from "react";
+import Navbar from "./Navbar";
+import room from './classroom.jpg'; 
+import canteen from './canteen.jpg'; 
+import placement from './placementone.png'; 
+import classroom from './classone.jpg'; 
+import "./Campus.css"; 
+
+function Campus() {
+  return (
+    <div>
+      <Navbar />
+
+      <div className="mycampus-container">
+        <div className="mycampus-line">
+          <div className="mycampus-placement">
+            <img src={placement} alt="Placement" className="career-logo" />
+            <p>
+              At JV, your journey towards a promising career begins.<br />
+              JV is not just an educational institution;<br />
+              it's a platform that nurtures your talents,<br />
+              hones your skills, and equips you for a successful future.
+            </p>
+             </div>
+</div>
+  );
+}
+
+export default Campus;
