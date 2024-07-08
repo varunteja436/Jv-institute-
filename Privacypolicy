@@ -1,0 +1,107 @@
+import React from 'react';
+import './PrivacyPolicy.css';
+import Navbar from './Navbar';
+import Footer from './Footer';
+
+const PrivacyPolicy = () => {
+  return (
+    <div className="privacy-policy-container">
+      <Navbar />
+      <div className="privacy-policy-content">
+        <h1>Privacy Policy for JV Institute of Technology</h1>
+        <p><strong>Effective Date:</strong> [Insert Date]</p>
+
+        <h2>Introduction</h2>
+        <p>
+          At JV Institute of Technology, we are committed to protecting your privacy and ensuring that your personal
+          information is handled in a safe and responsible manner. This Privacy Policy outlines our practices regarding
+          the collection, use, and disclosure of information we receive from students, faculty, staff, and visitors.
+        </p>
+        <h2>Information We Collect</h2>
+
+        <h3>Personal Information</h3>
+        <p>
+          We may collect personal information that you provide to us directly, such as:
+        </p>
+        <ul>
+          <li>Name</li>
+          <li>Contact information (email address, phone number, mailing address)</li>
+          <li>Date of birth</li>
+          <li>Educational background</li>
+          <li>Identification documents (such as student ID, government-issued ID)</li>
+        </ul>
+
+        <h3>Automatically Collected Information</h3><br></br>
+        <p>
+          When you interact with our website and online services, we may automatically collect certain information about
+          your device and usage, including:
+        </p>
+        <ul>
+          
+        <li>Browser type and version</li>
+          <li>Pages visited</li>
+          <li>Time and date of visit</li>
+       
+        </ul>
+
+        <h2>How We Use Your Information</h2><br></br>
+        <p>
+          We use the collected information for various purposes, including:
+        </p>
+        <ul>
+          <li>Providing and improving our services</li>
+          <li>Communicating with you</li>
+          <li>Processing applications and admissions</li>
+          <li>Managing academic records</li>
+          <li>Administering exams and evaluations</li>
+          <li>Providing support and responding to inquiries</li>
+          </ul>
+
+        <h2>Data Security</h2><br></br>
+        <p>
+          We implement appropriate technical and organizational measures to protect your personal information from
+          unauthorized access, disclosure, alteration, and destruction. However, no method of transmission over the
+          internet or electronic storage is 100% secure, so we cannot guarantee absolute security.
+        </p>
+
+        <h2>Your Rights</h2><br></br>
+        <p>
+          You have certain rights regarding your personal information, including:
+        </p>
+        <ul>
+          <li>Accessing your data</li>
+          <li>Correcting inaccurate or incomplete data</li>
+          <li>Requesting deletion of your data</li>
+          <li>Objecting to the processing of your data</li>
+          <li>Requesting restriction of processing your data</li>
+          
+        </ul><br></br>
+        <p>
+          To exercise these rights, please contact us using the contact information provided below.
+        </p>
+
+        <h2>Changes to This Privacy Policy</h2><br></br>
+        <p>
+          We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated
+          effective date. We encourage you to review this Privacy Policy periodically to stay informed about how we are
+          protecting your information.
+        </p>
+
+        <h2>Contact Us</h2><br></br>
+         <p>
+          If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
+        </p><br></br>
+        <p>
+          
+          Email: [JVInstituteOfTechnology@gmail.com]<br />
+          Phone: [1230-1230-4657]<br />
+        </p>
+
+        <p>Thank you for trusting JV Institute of Technology with your personal information. We are committed to ensuring your privacy and protecting your data.</p>
+      </div>
+      <Footer />
+    </div>
+  );
+};
+
+export default PrivacyPolicy;
