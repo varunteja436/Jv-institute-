@@ -1,0 +1,51 @@
+
+.aboutus-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .aboutus-content {
+    flex: 1;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    width: 100%;
+  
+    margin: 0 auto; 
+    text-align: left; 
+  }
+  
+.aboutus-content h1,
+  .aboutus-content h2,
+  .aboutus-content h3,
+  .aboutus-content p {
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .aboutus-content h1 {
+    margin-left: 0;
+    padding: 0; 
+  }
+  
+  .aboutus-content h2 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 22px;   }
+  
+  
+  .aboutus-content p {
+    text-align: left; 
+    margin: 0; 
+    padding: 0;  
+  }
+  
+  
+  .aboutus-content strong {
+    color: #007bff; 
+    font-weight: bold;  }
+  
+
+  
