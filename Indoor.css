@@ -1,0 +1,65 @@
+.indoor-line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.indoor-chess,
+.indoor-tt,
+.indoor-carrom {
+  flex: 1 1 calc(50% - 40px);
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.indoor-logo {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.indoor-chess p,
+.indoor-tt p,
+.indoor-carrom p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .indoor-chess,
+  .indoor-tt,
+  .indoor-carrom {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .indoor-chess,
+  .indoor-tt,
+  .indoor-carrom {
+    flex: 1 1 calc(100% - 20px);
+  }
+  .indoor-line {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .indoor-logo {
+    max-width: 300px;
+  }
+  .indoor-chess p,
+  .indoor-tt p,
+  .indoor-carrom p {
+    font-size: 16px;
+  }
+}
