@@ -1,0 +1,74 @@
+/* TermsAndConditions.css */
+.terms-conditions-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .terms-conditions-content {
+    flex: 1;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    width: 100%;
+    margin: 0 auto; 
+    text-align: left;  }
+  
+   .terms-conditions-content h1,
+  .terms-conditions-content h2,
+  .terms-conditions-content h3,
+  .terms-conditions-content p,
+  .terms-conditions-content ul,
+  .terms-conditions-content li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .terms-conditions-content h1 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 28px; 
+  }
+  
+  .terms-conditions-content h2 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 22px;   }
+  
+  .terms-conditions-content h3 {
+    margin-top: 15px;
+    color: #555;
+  }
+  
+  
+  .terms-conditions-content p {
+    text-align: left; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  .terms-conditions-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .terms-conditions-content li {
+    margin-top: 10px;
+  }
+  
+  
+
+  
+  
+  @media (max-width: 768px) {
+    .terms-conditions-content h1 {
+      font-size: 24px;     }
+  
+    .terms-conditions-content h2 {
+      font-size: 20px;  }
+  
+    .terms-conditions-content p {
+      font-size: 16px;  }
+  }
+  
