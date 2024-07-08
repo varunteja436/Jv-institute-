@@ -1,0 +1,23 @@
+.campus-container {
+  display: flex;
+  justify-content: space-around; 
+  margin-top: 20px;
+}
+
+.event {
+  width: 35%; 
+   text-align: center;
+}
+
+.event-logo {
+  width: 100%;
+  max-width: 100%; 
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.event p {
+  margin: 0;
+  padding: 10px;
+  font-size: 1rem; 
+}
