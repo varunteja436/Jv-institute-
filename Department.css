@@ -1,0 +1,91 @@
+.department {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.department-brand a,
+.department-list h4 a {
+  color: white;
+  text-decoration: none;
+}
+
+.department-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.department-list li {
+  margin: 0 15px;
+}
+
+.department-list h4 a:hover {
+  text-decoration: underline;
+}
+
+
+.vjit {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.department-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+}
+
+.Course,
+.Course.two {
+  flex: 1; 
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.Course h2,
+.Course.two h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  
+}
+Course h3,
+.Course.two h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.Course img,
+.Course.two img {
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.Course ul,
+.Course.two ul {
+  padding-left: 20px;
+  text-align: center;
+}
+
+.Course li,
+.Course.two li {
+  margin-bottom: 5px;
+
+}
