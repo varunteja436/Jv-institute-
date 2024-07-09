@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: blue;
+  }
+  
+  .footer .left a {
+    margin-right: auto; 
+    color: white; 
+  }
+  
+  .footer .center a {
+    text-align: center;
+    color: white; 
+  }
+  
+  .footer .right a {
+    margin-left: auto; 
+    color: white; 
+  }
